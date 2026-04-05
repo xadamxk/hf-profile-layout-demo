@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeaderRow.css';
+import ProfileActions from '../ProfileActions';
 
 const HeaderRow = ({ userData }) => {
   return (
@@ -14,6 +15,7 @@ const HeaderRow = ({ userData }) => {
           <img src={userData.bannerImage} alt="Profile Banner" />
         </div>
       )}
+      <ProfileActions />
     </div>
   );
 };

@@ -15,14 +15,6 @@ const CardLayout = ({ StatsComponent, HeaderComponent, userData }) => {
       </div>
 
       <div className="card-layout-grid">
-        {/* Stats Card */}
-        <div className="card stats-card">
-          <div className="card-header">
-            <h3><i className="fas fa-chart-bar"></i> Statistics</h3>
-          </div>
-          <StatsComponent userData={userData} />
-        </div>
-
         {/* Bio Card */}
         <div className="card bio-card-layout">
           <div className="card-header">
@@ -33,24 +25,12 @@ const CardLayout = ({ StatsComponent, HeaderComponent, userData }) => {
           </div>
         </div>
 
-        {/* Activity Card */}
-        <div className="card activity-card-layout">
+        {/* Stats Card */}
+        <div className="card stats-card">
           <div className="card-header">
-            <h3><i className="fas fa-stream"></i> Recent Activity</h3>
+            <h3><i className="fas fa-chart-bar"></i> Statistics</h3>
           </div>
-          <div className="card-body">
-            <RecentActivity activities={userData.activityFeed} />
-          </div>
-        </div>
-
-        {/* Contracts Card */}
-        <div className="card contracts-card-layout">
-          <div className="card-header">
-            <h3><i className="fas fa-file-contract"></i> Recent Contracts</h3>
-          </div>
-          <div className="card-body">
-            <RecentContracts contracts={userData.recentContracts} />
-          </div>
+          <StatsComponent userData={userData} />
         </div>
 
         {/* Market Card */}
@@ -77,6 +57,16 @@ const CardLayout = ({ StatsComponent, HeaderComponent, userData }) => {
                 <div className="stat-label">Credibility</div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Contracts Card */}
+        <div className="card contracts-card-layout">
+          <div className="card-header">
+            <h3><i className="fas fa-file-contract"></i> Recent Contracts</h3>
+          </div>
+          <div className="card-body">
+            <RecentContracts contracts={userData.recentContracts.slice(0, 3)} />
           </div>
         </div>
 
@@ -114,6 +104,16 @@ const CardLayout = ({ StatsComponent, HeaderComponent, userData }) => {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Activity Card */}
+        <div className="card activity-card-layout">
+          <div className="card-header">
+            <h3><i className="fas fa-stream"></i> Recent Activity</h3>
+          </div>
+          <div className="card-body">
+            <RecentActivity activities={userData.activityFeed} />
           </div>
         </div>
       </div>

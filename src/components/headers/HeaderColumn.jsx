@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeaderColumn.css';
+import ProfileActions from '../ProfileActions';
 
 const HeaderColumn = ({ userData }) => {
   return (
@@ -13,6 +14,9 @@ const HeaderColumn = ({ userData }) => {
       </div>
       <div className="header-banner">
         <img src={userData.bannerImage} alt="Profile Banner" />
+        <div className="header-actions-overlay">
+          <ProfileActions />
+        </div>
       </div>
     </div>
   );

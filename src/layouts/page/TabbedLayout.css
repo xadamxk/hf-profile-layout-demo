@@ -1,5 +1,6 @@
 .tabbed-layout {
   padding: 20px;
+  overflow: visible;
 }
 
 .tabs-container {

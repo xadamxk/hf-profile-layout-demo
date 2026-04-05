@@ -8,6 +8,8 @@
   margin-bottom: 20px;
   border: 1px solid #404040;
   min-height: 140px;
+  position: relative;
+  overflow: visible;
 }
 
 .profile-header-row .header-avatar {
@@ -47,10 +49,17 @@
   .profile-header-row {
     flex-direction: column;
     text-align: center;
+    gap: 16px;
   }
   
   .header-banner-row {
     margin-left: 0;
     max-width: 100%;
+  }
+  
+  .profile-header-row .profile-actions {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
   }
 }
