@@ -16,7 +16,6 @@ import StatsLayout5IconList from './layouts/stats/StatsLayout5IconList';
 // Header Components
 import HeaderColumn from './components/headers/HeaderColumn';
 import HeaderRow from './components/headers/HeaderRow';
-import HeaderCard from './components/headers/HeaderCard';
 
 const pageLayouts = [
   { id: 1, name: 'Two-Column', component: TwoColumnLayout, icon: 'columns' },
@@ -35,7 +34,6 @@ const statsLayouts = [
 const headerStyles = [
   { id: 1, name: 'Column', component: HeaderColumn, icon: 'align-left' },
   { id: 2, name: 'Row', component: HeaderRow, icon: 'align-justify' },
-  { id: 3, name: 'Card', component: HeaderCard, icon: 'id-card' },
 ];
 
 function App() {
