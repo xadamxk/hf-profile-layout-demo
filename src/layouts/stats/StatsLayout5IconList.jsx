@@ -31,11 +31,17 @@ const StatsLayout5IconList = ({ userData }) => {
       <div className="stat-row">
         <span className="row-icon"><i className="fas fa-balance-scale"></i></span>
         <span className="row-main">
-          <span className="cred-pos">{stats.credibility.positive}</span>-
+          Credibility <span className="cred-pos">{stats.credibility.positive}</span>-
           <span className="cred-neu">{stats.credibility.neutral}</span>-
-          <span className="cred-neg">{stats.credibility.negative}</span> Credibility
+          <span className="cred-neg">{stats.credibility.negative}</span>
         </span>
-        <span className="row-sub"></span>
+        <span className="row-sub">
+          {(() => {
+            const total = stats.credibility.positive + stats.credibility.neutral + stats.credibility.negative;
+            const percentage = total > 0 ? Math.round((stats.credibility.positive / total) * 100) : 0;
+            return `${percentage}%`;
+          })()}
+        </span>
       </div>
 
       <div className="stat-row">

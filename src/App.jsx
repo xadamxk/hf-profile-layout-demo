@@ -24,15 +24,15 @@ const pageLayouts = [
 ];
 
 const statsLayouts = [
-  { id: 1, name: 'Icon List', component: StatsLayout5IconList },
-  { id: 2, name: 'Metrics Emphasis', component: StatsLayout4MetricsEmphasis },
-  { id: 3, name: 'Grouped Sections', component: StatsLayout3GroupedSections },
-  { id: 4, name: 'Two-Column Grid', component: StatsLayout1TwoColumn },
-  { id: 5, name: 'Card Grid', component: StatsLayout2CardGrid }
+  { id: 1, name: 'Table', component: StatsLayout5IconList },
+  { id: 2, name: 'Cards (Metrics Emphasis)', component: StatsLayout4MetricsEmphasis },
+  { id: 3, name: 'Cards (Grouped Sections)', component: StatsLayout3GroupedSections },
+  { id: 5, name: 'Cards (Grid)', component: StatsLayout2CardGrid },
+  { id: 4, name: 'Two-Column Grid', component: StatsLayout1TwoColumn }
 ];
 
 const headerStyles = [
-  { id: 1, name: 'Column', component: HeaderColumn, icon: 'align-left' },
+  { id: 1, name: 'Columns', component: HeaderColumn, icon: 'align-left' },
   { id: 2, name: 'Row', component: HeaderRow, icon: 'align-justify' },
 ];
 
