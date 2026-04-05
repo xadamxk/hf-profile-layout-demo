@@ -44,10 +44,12 @@ const TabbedLayout = ({ StatsComponent, HeaderComponent, userData }) => {
         <div className="tab-content">
           {activeTab === 'overview' && (
             <div className="tab-pane">
-              <div className="stats-wrapper">
-                <StatsComponent userData={userData} />
+              <div className="overview-grid">
+                <AboutMeBox userData={userData} />
+                <div className="stats-wrapper">
+                  <StatsComponent userData={userData} />
+                </div>
               </div>
-              <AboutMeBox userData={userData} />
             </div>
           )}
 
@@ -60,7 +62,7 @@ const TabbedLayout = ({ StatsComponent, HeaderComponent, userData }) => {
 
           {activeTab === 'marketplace' && (
             <div className="tab-pane">
-              <h3>Market Information</h3>
+              <h3>Marketplace Activity</h3>
               <div className="market-grid">
                 <div className="market-stat">
                   <div className="market-label">Contracts Completed</div>
