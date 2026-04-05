@@ -74,7 +74,7 @@
 .contract-date {
   font-size: 0.7rem;
   color: #6b7280;
-  margin-left: auto;
+  text-align: right;
 }
 
 .contract-description {
@@ -91,5 +91,5 @@
   font-size: 0.75rem;
   color: #3b82f6;
   font-weight: 600;
-  text-align: right;
+  margin-left: auto;
 }

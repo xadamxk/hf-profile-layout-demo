@@ -61,20 +61,43 @@
   font-size: 0.9rem;
 }
 
-.cred-indicator {
-  margin: 0 2px;
-}
-
-.cred-indicator.positive {
+.cred-pos {
   color: #10b981;
+  font-weight: 600;
 }
 
-.cred-indicator.neutral {
+.cred-neu {
   color: #9ca3af;
+  font-weight: 600;
 }
 
-.cred-indicator.negative {
+.cred-neg {
   color: #ef4444;
+  font-weight: 600;
+}
+
+.action-icon-btn {
+  background: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.7rem;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.action-icon-btn:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
 }
 
 @media (max-width: 768px) {

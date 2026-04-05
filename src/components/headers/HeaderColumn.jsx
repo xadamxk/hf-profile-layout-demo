@@ -13,7 +13,9 @@ const HeaderColumn = ({ userData }) => {
         </div>
       </div>
       <div className="header-banner">
-        <img src={userData.bannerImage} alt="Profile Banner" />
+        <div className="banner-image-container">
+          <img src={userData.bannerImage} alt="Profile Banner" />
+        </div>
         <div className="header-actions-overlay">
           <ProfileActions />
         </div>

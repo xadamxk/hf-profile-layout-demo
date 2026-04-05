@@ -13,10 +13,10 @@ const RecentContracts = ({ contracts }) => {
               {contract.statusType === 'negative' && <i className="fas fa-exclamation-circle"></i>}
             </div>
             <span className="contract-member">{contract.member}</span>
-            <span className="contract-date">{contract.date}</span>
+            <span className="contract-amount">{contract.amount}</span>
           </div>
           <div className="contract-description">{contract.description}</div>
-          <div className="contract-amount">{contract.amount}</div>
+          <div className="contract-date">{contract.date}</div>
         </div>
       ))}
     </div>

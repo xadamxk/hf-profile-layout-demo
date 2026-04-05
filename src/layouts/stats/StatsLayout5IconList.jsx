@@ -23,17 +23,19 @@ const StatsLayout5IconList = ({ userData }) => {
       <div className="stat-row">
         <span className="row-icon"><i className="fas fa-star"></i></span>
         <span className="row-main">{stats.popularity.toLocaleString()} Popularity</span>
-        <span className="row-sub"></span>
+        <button className="action-icon-btn" title="Give Popularity">
+          <i className="fas fa-plus"></i>
+        </button>
       </div>
 
       <div className="stat-row">
         <span className="row-icon"><i className="fas fa-balance-scale"></i></span>
-        <span className="row-main">{stats.credibility.positive}-{stats.credibility.neutral}-{stats.credibility.negative} Credibility</span>
-        <span className="row-sub">
-          <span className="cred-indicator positive">●</span>
-          <span className="cred-indicator neutral">●</span>
-          <span className="cred-indicator negative">●</span>
+        <span className="row-main">
+          <span className="cred-pos">{stats.credibility.positive}</span>-
+          <span className="cred-neu">{stats.credibility.neutral}</span>-
+          <span className="cred-neg">{stats.credibility.negative}</span> Credibility
         </span>
+        <span className="row-sub"></span>
       </div>
 
       <div className="stat-row">
@@ -45,7 +47,9 @@ const StatsLayout5IconList = ({ userData }) => {
       <div className="stat-row">
         <span className="row-icon"><i className="fas fa-coins"></i></span>
         <span className="row-main">{stats.bytes.toLocaleString()} Bytes</span>
-        <span className="row-sub"></span>
+        <button className="action-icon-btn" title="Give Bytes">
+          <i className="fas fa-plus"></i>
+        </button>
       </div>
 
       <div className="stat-row">

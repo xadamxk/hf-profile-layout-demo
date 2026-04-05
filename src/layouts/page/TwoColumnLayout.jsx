@@ -20,15 +20,15 @@ const TwoColumnLayout = ({ StatsComponent, HeaderComponent, userData }) => {
             <h3>Recent Activity</h3>
             <RecentActivity activities={userData.activityFeed} />
           </div>
+
+          <div className="activity-section">
+            <h3>Recent Contracts</h3>
+            <RecentContracts contracts={userData.recentContracts} />
+          </div>
         </div>
 
         <div className="right-sidebar">
           <StatsComponent userData={userData} />
-          
-          <div className="sidebar-section">
-            <h3>Recent Contracts</h3>
-            <RecentContracts contracts={userData.recentContracts} />
-          </div>
 
           <div className="sidebar-section">
             <h3>Recent Visitors</h3>
