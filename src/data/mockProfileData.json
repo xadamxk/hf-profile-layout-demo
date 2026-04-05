@@ -1,0 +1,269 @@
+{
+  "user": {
+    "username": "xadamxk",
+    "displayName": "xadamxk",
+    "title": "Tis but a flesh wound",
+    "avatar": "https://hackforums.net/uploads/avatars/avatar_574588.png?dateline=1762062039",
+    "bannerImage": "https://hackforums.net/uploads/phead/avatar_574588.gif?dateline=1762120817",
+    "groupImage": "https://hackforums.net/images/groupimages/custom/lions-league-2.gif",
+    "status": {
+      "online": true,
+      "lastSeen": "Today 12:22 PM",
+      "lastSeenTimestamp": "2026-04-05T12:22:00Z"
+    },
+    "account": {
+      "joinDate": "Nov 28, 2010",
+      "joinDateFull": "2010-11-28",
+      "timeOnline": "3 Weeks, 3 Days, 2 Hours",
+      "timeOnlineHours": 578
+    },
+    "stats": {
+      "popularity": 516,
+      "credibility": {
+        "positive": 52,
+        "neutral": 3,
+        "negative": 2
+      },
+      "bytes": 1405,
+      "threads": 8,
+      "posts": 577,
+      "quickLoves": {
+        "given": 129,
+        "received": 78
+      }
+    },
+    "marketplace": {
+      "contractsCompleted": 57,
+      "openDisputes": 2,
+      "isVendor": false,
+      "vendorBadge": ""
+    },
+    "bio": {
+      "aboutMeImage": "",
+      "aboutMe": "Hello World!",
+      "signature": "/signature.png",
+      "socialLinks": {
+        "facebook": "",
+        "instagram": "",
+        "twitter": "",
+        "youtube": "",
+        "linkedin": "",
+        "reddit": ""
+      }
+    },
+    "groups": [
+      {
+        "name": "Pink LSZ",
+        "image": "https://hackforums.net/images/groupimages/custom/pinklsz.png"
+      },
+      {
+        "name": "Warriors",
+        "image": "https://hackforums.net/images/groupimages/custom/warriors.gif"
+      },
+      {
+        "name": "Lions League",
+        "image": "https://hackforums.net/images/groupimages/custom/lions-league-2.gif"
+      },
+      {
+        "name": "Sociopaths",
+        "image": "https://hackforums.net/images/groupimages/custom/sociopaths.png"
+      },
+      {
+        "name": "Vibe",
+        "image": "https://hackforums.net/images/groupimages/custom/Vibe.gif"
+      },
+      {
+        "name": "HF Ub3r",
+        "image": "https://hackforums.net/images/groupimages/ub3r-a.png"
+      }
+    ],
+    "awards": [
+      {
+        "id": 40,
+        "name": "Sapphire of Ub3r",
+        "description": "Thanks"
+      },
+      {
+        "id": 194,
+        "name": "King Decade",
+        "description": "Decade of HF"
+      }
+    ],
+    "recentVisitors": [
+      {
+        "username": "ShaZen",
+        "uid": 5747012,
+        "avatar": "https://hackforums.net/images/mobale/default_avatar.png",
+        "visitTime": "Apr 4, 10:06 pm"
+      },
+      {
+        "username": "Steve",
+        "uid": 2758907,
+        "avatar": "https://hackforums.net/uploads/avatars/avatar_2758907.png?dateline=1615519914",
+        "visitTime": "Apr 4, 8:49 pm"
+      },
+      {
+        "username": "7",
+        "uid": 7,
+        "avatar": "https://hackforums.net/uploads/avatars/avatar_7.gif?dateline=1733287243",
+        "visitTime": "Apr 4, 7:54 pm"
+      },
+      {
+        "username": "Immortal",
+        "uid": 503372,
+        "avatar": "https://hackforums.net/uploads/avatars/avatar_503372.png?dateline=1741307354",
+        "visitTime": "Apr 4, 7:13 am"
+      },
+      {
+        "username": "Declan‎",
+        "uid": 2460055,
+        "avatar": "https://hackforums.net/images/mobale/default_avatar.png",
+        "visitTime": "Apr 3, 3:01 pm"
+      },
+      {
+        "username": "Omniscient",
+        "uid": 1,
+        "avatar": "https://hackforums.net/uploads/avatars/avatar_1.png?dateline=1767233800",
+        "visitTime": "Apr 3, 2:55 pm"
+      },
+      {
+        "username": "Wake",
+        "uid": 2745296,
+        "avatar": "https://hackforums.net/uploads/avatars/avatar_2745296.gif?dateline=1774821765",
+        "visitTime": "Apr 3, 2:13 pm"
+      },
+      {
+        "username": "Cap",
+        "uid": 57618,
+        "avatar": "https://hackforums.net/uploads/avatars/avatar_57618.png?dateline=1767816105",
+        "visitTime": "Apr 2, 1:42 pm"
+      },
+      {
+        "username": "Redx_1188",
+        "uid": 5744880,
+        "avatar": "https://hackforums.net/uploads/avatars/avatar_5744880.jpg?dateline=1774803110",
+        "visitTime": "Apr 2, 7:30 am"
+      },
+      {
+        "username": "Chingis",
+        "uid": 5745594,
+        "avatar": "https://hackforums.net/images/mobale/default_avatar.png",
+        "visitTime": "Apr 1, 10:37 pm"
+      }
+    ],
+    "recentContracts": [
+      {
+        "type": "Purchase",
+        "member": "SecureDevs",
+        "description": "Custom Discord Bot Development",
+        "amount": "$150",
+        "initiated": "Apr 3, 2026, 10:30 AM",
+        "date": "4/3/26",
+        "status": "Completed",
+        "statusType": "positive"
+      },
+      {
+        "type": "Sale",
+        "member": "CryptoKing88",
+        "description": "Website Security Audit Service",
+        "amount": "$250",
+        "initiated": "Apr 4, 2026, 02:15 PM",
+        "date": "4/4/26",
+        "status": "In Progress",
+        "statusType": "neutral"
+      },
+      {
+        "type": "Vouch Copy",
+        "member": "SketchyVendor",
+        "description": "Premium Account Access",
+        "amount": "$0 (Vouch)",
+        "initiated": "Apr 1, 2026, 08:45 PM",
+        "date": "4/1/26",
+        "status": "Disputed",
+        "statusType": "negative"
+      },
+      {
+        "type": "Purchase",
+        "member": "DevMaster",
+        "description": "Logo Design Package",
+        "amount": "$75",
+        "initiated": "Mar 30, 2026, 03:20 PM",
+        "date": "3/30/26",
+        "status": "Completed",
+        "statusType": "positive"
+      },
+      {
+        "type": "Sale",
+        "member": "TechGuru99",
+        "description": "Python Automation Script",
+        "amount": "$120",
+        "initiated": "Mar 28, 2026, 11:45 AM",
+        "date": "3/28/26",
+        "status": "In Progress",
+        "statusType": "neutral"
+      },
+      {
+        "type": "Purchase",
+        "member": "CodeWizard",
+        "description": "Database Optimization Service",
+        "amount": "$300",
+        "initiated": "Mar 25, 2026, 09:15 AM",
+        "date": "3/25/26",
+        "status": "Completed",
+        "statusType": "positive"
+      }
+    ],
+    "marketplaceThreads": [],
+    "activityFeed": [
+      {
+        "type": "thread",
+        "action": "created thread",
+        "threadTitle": "Anyone else stoked for the HF Meetup?",
+        "timestamp": "Apr 5, 2026 04:40 PM",
+        "replies": 14,
+        "preview": "I hope I get picked for the free trip. Have you guys applied yet?"
+      },
+      {
+        "type": "post",
+        "action": "replied to thread",
+        "threadTitle": "Blue Apple Award (Formerly Green Apple Award)",
+        "threadAuthor": "Lowkey",
+        "timestamp": "Apr 4, 2026 02:10 PM",
+        "preview": "The argument was that HF is split into 2 use cases - forum users and marketplace users."
+      },
+      {
+        "type": "reputation",
+        "action": "received positive reputation",
+        "amount": 3,
+        "threadTitle": "HFX 3.0 Release Thread",
+        "threadAuthor": "Omniscient",
+        "timestamp": "Apr 3, 2026 09:46 AM",
+        "preview": "LEGENDARY contributions to HF"
+      },
+      {
+        "type": "bytes_received",
+        "action": "received bytes",
+        "amount": 500,
+        "from": "xadamxk",
+        "reason": "Thanks for the extension update!",
+        "timestamp": "Apr 2, 2026 03:15 PM"
+      },
+      {
+        "type": "bytes_given",
+        "action": "sent bytes",
+        "amount": 250,
+        "to": "Omniscient",
+        "reason": "Great work on the new features",
+        "timestamp": "Apr 1, 2026 11:30 AM"
+      },
+      {
+        "type": "quicklove",
+        "action": "gave quick love",
+        "threadTitle": "Monthly Vote For HF - April 2026",
+        "threadAuthor": "Vibe",
+        "timestamp": "Mar 31, 2026 08:20 PM",
+        "preview": "Don't forget to vote for HF this month!"
+      }
+    ]
+  }
+}

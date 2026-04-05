@@ -1,0 +1,94 @@
+.stats-layout-3 {
+  padding: 20px;
+}
+
+.status-banner {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.status-badge-large {
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.status-badge-large.online {
+  background: #10b981;
+  color: white;
+}
+
+.status-badge-large.offline {
+  background: #6b7280;
+  color: white;
+}
+
+.status-subtitle {
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+.section-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.section-box {
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border: 1px solid #404040;
+  transition: border-color 0.2s;
+}
+
+.section-box:hover {
+  border-color: #3b82f6;
+}
+
+.section-box h4 {
+  margin: 0 0 16px 0;
+  font-size: 1.25rem;
+  color: #f3f4f6;
+  border-bottom: 2px solid #404040;
+  padding-bottom: 8px;
+}
+
+.section-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.item-icon {
+  font-size: 1.5rem;
+  min-width: 32px;
+  color: #3b82f6;
+}
+
+.item-value {
+  font-weight: bold;
+  color: #f3f4f6;
+  font-size: 1.1rem;
+}
+
+.item-label {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .section-groups {
+    grid-template-columns: 1fr;
+  }
+}

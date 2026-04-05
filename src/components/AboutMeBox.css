@@ -1,0 +1,49 @@
+.about-me-box {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #404040;
+}
+
+.about-me-box h3 {
+  margin: 0 0 12px 0;
+  color: #f3f4f6;
+}
+
+.about-me-content {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.about-me-content p {
+  color: #9ca3af;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-me-image {
+  max-height: 400px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 12px auto;
+  border-radius: 8px;
+}
+
+.about-me-divider {
+  border: none;
+  border-top: 1px solid #404040;
+  margin: 16px 0;
+}
+
+.about-me-signature {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.signature-image {
+  max-width: 100%;
+  max-height: 150px;
+  height: auto;
+  display: inline-block;
+}

@@ -1,0 +1,129 @@
+/* Grid variant - grid with avatars, names, and times */
+.visitors-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.visitor-grid-item {
+  text-align: center;
+}
+
+.visitor-avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #404040;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  margin-bottom: 4px;
+}
+
+.visitor-avatar:hover {
+  transform: scale(1.05);
+  border-color: #3b82f6;
+}
+
+.visitor-grid-name {
+  font-size: 0.75rem;
+  color: #f3f4f6;
+  font-weight: 500;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.visitor-grid-time {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+/* Cards variant - detailed cards with name and time */
+.visitors-grid-tabbed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+}
+
+.visitor-card {
+  text-align: center;
+}
+
+.visitor-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #404040;
+  margin-bottom: 4px;
+  transition: border-color 0.2s;
+}
+
+.visitor-card img:hover {
+  border-color: #3b82f6;
+}
+
+.visitor-name {
+  font-size: 0.8rem;
+  color: #f3f4f6;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.visitor-time {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+/* Flex variant - horizontal layout with info below */
+.visitors-flex {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.visitor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.visitor-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #404040;
+  transition: transform 0.2s, border-color 0.2s;
+  margin-bottom: 4px;
+}
+
+.visitor-item:hover img {
+  transform: scale(1.05);
+  border-color: #3b82f6;
+}
+
+.visitor-flex-name {
+  font-size: 0.75rem;
+  color: #f3f4f6;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.visitor-flex-time {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  .visitors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .visitors-grid-tabbed {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}

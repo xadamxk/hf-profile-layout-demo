@@ -1,0 +1,95 @@
+.contracts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contract-item {
+  padding: 8px;
+  background: #1f1f1f;
+  border-radius: 6px;
+  border: 1px solid #404040;
+  transition: border-color 0.2s;
+}
+
+.contract-item:hover {
+  border-color: #3b82f6;
+}
+
+.contract-item.status-positive {
+  border-left: 3px solid #10b981;
+}
+
+.contract-item.status-neutral {
+  border-left: 3px solid #3b82f6;
+}
+
+.contract-item.status-negative {
+  border-left: 3px solid #ef4444;
+}
+
+.contract-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.contract-status-icon {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contract-item.status-positive .contract-status-icon {
+  color: #10b981;
+}
+
+.contract-item.status-neutral .contract-status-icon {
+  color: #3b82f6;
+}
+
+.contract-item.status-negative .contract-status-icon {
+  color: #ef4444;
+}
+
+.contract-type-label {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+.contract-member {
+  font-size: 0.8rem;
+  color: #f3f4f6;
+  font-weight: 500;
+  flex: 1;
+}
+
+.contract-date {
+  font-size: 0.7rem;
+  color: #6b7280;
+  margin-left: auto;
+}
+
+.contract-description {
+  font-size: 0.7rem;
+  color: #9ca3af;
+  margin-bottom: 3px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contract-amount {
+  font-size: 0.75rem;
+  color: #3b82f6;
+  font-weight: 600;
+  text-align: right;
+}

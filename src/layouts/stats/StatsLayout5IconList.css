@@ -1,0 +1,91 @@
+.stats-layout-5 {
+  background: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border: 1px solid #404040;
+  overflow: hidden;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 16px;
+  border-bottom: 1px solid #404040;
+  transition: background-color 0.2s;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-row:hover {
+  background: #252525;
+}
+
+.row-icon {
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b82f6;
+}
+
+.status-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.online {
+  background: #10b981;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+}
+
+.status-dot.offline {
+  background: #6b7280;
+}
+
+.row-main {
+  font-weight: 600;
+  color: #f3f4f6;
+  font-size: 1rem;
+}
+
+.row-sub {
+  text-align: right;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.cred-indicator {
+  margin: 0 2px;
+}
+
+.cred-indicator.positive {
+  color: #10b981;
+}
+
+.cred-indicator.neutral {
+  color: #9ca3af;
+}
+
+.cred-indicator.negative {
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .stat-row {
+    grid-template-columns: 36px 1fr;
+    gap: 12px;
+  }
+  
+  .row-sub {
+    grid-column: 2;
+    text-align: left;
+    font-size: 0.85rem;
+  }
+}
