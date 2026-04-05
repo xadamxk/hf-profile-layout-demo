@@ -51,56 +51,70 @@ function App() {
     <div className="app">
       <div className="container">
         <div className="controls-container">
-          <div className="control-section">
-            <h2>Page Layout</h2>
-            <div className="layout-buttons page-layout-buttons">
+          <div className="control-group">
+            <label htmlFor="page-layout-select" className="control-label">
+              <i className="fas fa-th-large"></i>
+              Page Layout
+            </label>
+            <select 
+              id="page-layout-select"
+              className="control-select"
+              value={currentPageLayout}
+              onChange={(e) => setCurrentPageLayout(Number(e.target.value))}
+            >
               {pageLayouts.map((layout) => (
-                <button
-                  key={layout.id}
-                  className={`layout-btn ${currentPageLayout === layout.id ? 'active' : ''}`}
-                  onClick={() => setCurrentPageLayout(layout.id)}
-                >
-                  <span className="layout-icon">
-                    <i className={`fas fa-${layout.icon}`}></i>
-                  </span>
-                  <span className="layout-name">{layout.name}</span>
-                </button>
+                <option key={layout.id} value={layout.id}>
+                  {layout.name}
+                </option>
               ))}
-            </div>
+            </select>
+            <p className="control-description">
+              Choose how the overall page content is organized and displayed.
+            </p>
           </div>
 
-          <div className="control-section">
-            <h2>Header Style</h2>
-            <div className="layout-buttons header-layout-buttons">
+          <div className="control-group">
+            <label htmlFor="header-style-select" className="control-label">
+              <i className="fas fa-heading"></i>
+              Header Style
+            </label>
+            <select 
+              id="header-style-select"
+              className="control-select"
+              value={currentHeaderStyle}
+              onChange={(e) => setCurrentHeaderStyle(Number(e.target.value))}
+            >
               {headerStyles.map((header) => (
-                <button
-                  key={header.id}
-                  className={`layout-btn ${currentHeaderStyle === header.id ? 'active' : ''}`}
-                  onClick={() => setCurrentHeaderStyle(header.id)}
-                >
-                  <span className="layout-icon">
-                    <i className={`fas fa-${header.icon}`}></i>
-                  </span>
-                  <span className="layout-name">{header.name}</span>
-                </button>
+                <option key={header.id} value={header.id}>
+                  {header.name}
+                </option>
               ))}
-            </div>
+            </select>
+            <p className="control-description">
+              Select the profile header design showing avatar, name, and banner.
+            </p>
           </div>
 
-          <div className="control-section">
-            <h2>Stats Display Style</h2>
-            <div className="layout-buttons stats-layout-buttons">
+          <div className="control-group">
+            <label htmlFor="stats-display-select" className="control-label">
+              <i className="fas fa-chart-bar"></i>
+              Stats Display Style
+            </label>
+            <select 
+              id="stats-display-select"
+              className="control-select"
+              value={currentStatsLayout}
+              onChange={(e) => setCurrentStatsLayout(Number(e.target.value))}
+            >
               {statsLayouts.map((layout) => (
-                <button
-                  key={layout.id}
-                  className={`layout-btn stats-btn ${currentStatsLayout === layout.id ? 'active' : ''}`}
-                  onClick={() => setCurrentStatsLayout(layout.id)}
-                >
-                  <span className="layout-number">{layout.id}</span>
-                  <span className="layout-name">{layout.name}</span>
-                </button>
+                <option key={layout.id} value={layout.id}>
+                  {layout.name}
+                </option>
               ))}
-            </div>
+            </select>
+            <p className="control-description">
+              Define how user statistics and metrics are presented.
+            </p>
           </div>
         </div>
         

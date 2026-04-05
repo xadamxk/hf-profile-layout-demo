@@ -43,108 +43,72 @@ body {
 
 .controls-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   margin-bottom: 24px;
-}
-
-.control-section {
   background: #2a2a2a;
-  padding: 24px;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   border: 1px solid #404040;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.control-section h2 {
-  margin: 0 0 16px 0;
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-label {
   color: #f3f4f6;
-  font-size: 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 
-.layout-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.page-layout-buttons .layout-btn {
-  flex: 1;
-  min-width: 140px;
-}
-
-.stats-layout-buttons .layout-btn {
-  flex: 1;
-  min-width: 160px;
-}
-
-.layout-btn {
-  padding: 14px 18px;
-  background: #1f1f1f;
-  border: 2px solid #404040;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-family: inherit;
-  color: #f3f4f6;
-}
-
-.layout-btn:hover {
-  background: #2a2a2a;
-  border-color: #3b82f6;
-  transform: translateY(-2px);
-}
-
-.layout-btn.active {
-  background: #3b82f6;
-  border-color: #3b82f6;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
-}
-
-.layout-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  font-size: 1.2rem;
-}
-
-.layout-btn.active .layout-icon {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.layout-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-weight: bold;
+.control-label i {
+  color: #3b82f6;
   font-size: 0.9rem;
 }
 
-.layout-btn.active .layout-number {
-  background: rgba(255, 255, 255, 0.2);
+.control-select {
+  padding: 10px 14px;
+  background: #1f1f1f;
+  border: 2px solid #404040;
+  border-radius: 8px;
+  color: #f3f4f6;
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
 }
 
-.layout-name {
-  flex: 1;
-  text-align: left;
-  font-weight: 500;
-  font-size: 0.95rem;
+.control-select:hover {
+  border-color: #3b82f6;
+  background: #252525;
+}
+
+.control-select:focus {
+  border-color: #3b82f6;
+  background: #252525;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.control-select option {
+  background: #1f1f1f;
+  color: #f3f4f6;
+  padding: 10px;
+}
+
+.control-description {
+  color: #9ca3af;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin: 0;
 }
 
 .layout-preview {
@@ -166,20 +130,20 @@ body {
     padding: 20px 12px;
   }
   
-  .control-section {
+  .controls-container {
     padding: 16px;
   }
   
-  .control-section h2 {
-    font-size: 1.1rem;
+  .control-label {
+    font-size: 0.9rem;
   }
   
-  .layout-buttons {
-    flex-direction: column;
+  .control-select {
+    font-size: 0.9rem;
+    padding: 8px 12px;
   }
   
-  .page-layout-buttons .layout-btn,
-  .stats-layout-buttons .layout-btn {
-    min-width: 100%;
+  .control-description {
+    font-size: 0.75rem;
   }
 }
